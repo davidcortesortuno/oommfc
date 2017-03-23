@@ -16,6 +16,8 @@ class Driver(mm.Driver):
         Drive the system.
 
         """
+        # We need to call this function (_check_args). At least the
+        # derived 'HysteresisDriver' class depends on it.
         self._check_args(**kwargs)
 
         filenames = self._filenames(system)

@@ -10,8 +10,9 @@ class TestHysteresisDriver(TestDriver):
     def test_script(self):
         hd = oc.HysteresisDriver()
 
-        script = hd._script(self.system, Hmin=(0, 0, 0),
-                           Hmax=(10, 10, 10), n=10)
+        args = {'Hmin':(0, 0, 0), 'Hmax':(10, 10, 10), 'n':10}
+        script = hd._check_args(**args)
+        script = hd._script(self.system, **args)
 
         assert script[0] == "#"
         assert script[-1] == "1"
@@ -29,9 +30,10 @@ class TestHysteresisDriver(TestDriver):
 
     def test_save_mif(self):
         hd = oc.HysteresisDriver()
-
+        args = {'Hmin':(0, 0, 0), 'Hmax':(1, 1, 1), 'n':10}
         hd._makedir(self.system)
-        hd._save_mif(self.system, Hmin=(0, 0, 0), Hmax=(1, 1, 1), n=10)
+        hd._check_args(**args)
+        hd._save_mif(self.system, **args)
 
         miffilename = os.path.join("tds", "tds.mif")
         assert os.path.isfile(miffilename)
