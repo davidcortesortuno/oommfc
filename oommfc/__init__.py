@@ -10,8 +10,10 @@ from micromagneticmodel.consts import mu0, e, me, kB, h, g, \
     hbar, gamma, muB, gamma0
 from . import examples
 
-oommf = OOMMF()
+import aeon
+# timer = aeon.Timer()
 
+oommf = OOMMF()
 
 def test():
     """Runs all the tests"""

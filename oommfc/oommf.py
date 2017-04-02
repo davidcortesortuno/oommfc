@@ -2,10 +2,18 @@ import datetime
 import os
 import sys
 import time
+import logging
+c = logging.basicConfig(level=logging.DEBUG)
+
+
 import sarge
+
+from aeon import timer
 
 
 class OOMMF:
+
+    @timer.method
     def __init__(self, varname="OOMMFTCL", dockername="docker",
                  dockerimage="joommf/oommf", where=None):
         self.varname = varname
@@ -13,6 +21,7 @@ class OOMMF:
         self.dockerimage = dockerimage
         self.statusdict = self.status(raise_exception=False)
 
+    @timer.method
     def status(self, raise_exception=False, verbose=False):
         # OOMMF status on host
         cmd = ("tclsh", os.getenv(self.varname, "wrong"), "boxsi",
@@ -59,6 +68,8 @@ class OOMMF:
 
         return {"host": host, "docker": docker}
 
+
+    @timer.method
     def _check_return_value(self, ret):
 
         # there must be at least one ...
@@ -79,9 +90,12 @@ class OOMMF:
 
         return ret
 
+    #@timer.method
     def call(self, argstr, where=None):
-        # print day and time at which we start calling OOMMF (useful
-        # for longer runs)
+        logging.debug("Call starts")
+        #with self.timer("call"):
+            # print day and time at which we start calling OOMMF (useful
+            # for longer runs)
         x = datetime.datetime.now()
         timestamp = "{}/{}/{} {}:{}".format(x.year, x.month, x.day,
                                             x.hour, x.minute)
@@ -98,25 +112,32 @@ class OOMMF:
         toc = time.time()
         seconds = "[{:0.1f}s]".format(toc - tic)
         print(seconds)
-
+        logging.debug("oommf::call execution took {} seconds".format(seconds))
         # check exit code
         val = self._check_return_value(val)
 
         if val.returncode is not 0:
             raise RuntimeError("Some problem calling OOMMF.")
 
+        logging.debug("oommf::call return value is {}".format(val.returncode))
+        logging.debug("oommf::call return val is {}".format(val))
+
         return val
 
+
+    @timer.method
     def version(self, where=None):
         where = self._where_to_run(where=where)
         p = self.call(argstr="+version", where=where)
         return p.stderr.text.split("oommf.tcl")[-1].strip()
 
+    @timer.method
     def platform(self, where=None):
         where = self._where_to_run(where=where)
         p = self.call(argstr="+platform", where=where)
         return p.stderr.text
 
+    @timer.method
     def _where_to_run(self, where):
         if where is None:
             if self.statusdict["host"]:
@@ -126,12 +147,14 @@ class OOMMF:
         else:
             return where
 
+    @timer.method
     def _call_host(self, argstr):
         oommfpath = os.getenv(self.varname, None)
         cmd = ("tclsh", oommfpath, "boxsi", "+fg",
                argstr, "-exitondone", "1")
         return self._run_cmd(cmd)
 
+    @timer.method
     def _call_docker(self, argstr):
         cmd = "{} pull {}".format(self.dockername, self.dockerimage)
         self._run_cmd(cmd)
@@ -142,8 +165,15 @@ class OOMMF:
         return self._run_cmd(cmd)
 
     def _run_cmd(self, cmd):
+        start = time.time()
+        def report_time():
+            calltime = time.time()-start
+            print("_run_cmd: took {:.1f}s to call '{}'".format(calltime, cmd))
+            return calltime
         if sys.platform in ("linux", "darwin"):  # Linux and MacOs
-            return sarge.capture_both(cmd)
+            ret = sarge.capture_both(cmd)
+            report_time()
+            return ret
         elif sys.platform.startswith("win"):
             return sarge.run(cmd)
         else:
@@ -151,6 +181,7 @@ class OOMMF:
                    "developers").format(sys.platform)  # pragma: no cover
             raise NotImplementedError(msg)
 
+    @timer.method
     def kill(self, targets=('all',), where=None):
         where = self._where_to_run(where)
         if where == 'host':
