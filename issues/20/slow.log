@@ -1,0 +1,195 @@
+/Users/fangohr/git/aeon/aeon/timer.py:35: UserWarning: You are nesting measurements in status::OOMMF.
+  warnings.warn("You are nesting measurements in {}::{}.".format(name, group))
+DEBUG:sarge:started: CommandNode(command=('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1') redirects={}), None, False
+DEBUG:sarge:Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') created
+DEBUG:sarge:About to call Popen: ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x107df8490>, '_input': None, '_communication_started': False, 'args': ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72897, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-1 as reader for Capture-1
+DEBUG:sarge:Capture-1: reader thread about to read line
+DEBUG:sarge:Capture-1: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-1: reader thread now started
+DEBUG:sarge:Created thread Thread-2 as reader for Capture-2
+DEBUG:sarge:Capture-2: reader thread about to read line
+DEBUG:sarge:Capture-2: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-2: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 33: b'<72897> oommf.tcl 1.2.1.0  inf'
+DEBUG:sarge:queued chunk of length 18: b'oommf.tcl 1.2.1.0\n'
+DEBUG:sarge:Capture-2: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-1: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+DEBUG:sarge:started: CommandNode(command=('docker', 'images') redirects={}), None, False
+DEBUG:sarge:Command('docker images') created
+DEBUG:sarge:About to call Popen: ('docker', 'images'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('docker images'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10feadc10>, '_input': None, '_communication_started': False, 'args': ('docker', 'images'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72898, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-3 as reader for Capture-3
+DEBUG:sarge:Capture-3: reader thread about to read line
+DEBUG:sarge:Capture-3: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-3: reader thread now started
+DEBUG:sarge:Created thread Thread-4 as reader for Capture-4
+DEBUG:sarge:Capture-4: reader thread about to read line
+DEBUG:sarge:Capture-4: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-4: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 85: b'REPOSITORY          TAG       '
+DEBUG:sarge:queued chunk of length 88: b'onda                latest    '
+DEBUG:sarge:queued chunk of length 87: b'cowimage            latest    '
+DEBUG:sarge:queued chunk of length 87: b'cow                 latest    '
+DEBUG:sarge:queued chunk of length 87: b'myimag              latest    '
+DEBUG:sarge:queued chunk of length 87: b'<none>              <none>    '
+DEBUG:sarge:queued chunk of length 87: b'joommf/oommf        latest    '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.10     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.04     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              latest    '
+DEBUG:sarge:Capture-4: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-3: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('docker images') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+/Users/fangohr/git/aeon/aeon/timer.py:35: UserWarning: You are nesting measurements in status::OOMMF.
+  warnings.warn("You are nesting measurements in {}::{}.".format(name, group))
+DEBUG:sarge:started: CommandNode(command=('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1') redirects={}), None, False
+DEBUG:sarge:Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') created
+DEBUG:sarge:About to call Popen: ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10fead968>, '_input': None, '_communication_started': False, 'args': ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72899, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-5 as reader for Capture-5
+DEBUG:sarge:Capture-5: reader thread about to read line
+DEBUG:sarge:Capture-5: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-5: reader thread now started
+DEBUG:sarge:Created thread Thread-6 as reader for Capture-6
+DEBUG:sarge:Capture-6: reader thread about to read line
+DEBUG:sarge:Capture-6: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-6: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 33: b'<72899> oommf.tcl 1.2.1.0  inf'
+DEBUG:sarge:queued chunk of length 18: b'oommf.tcl 1.2.1.0\n'
+DEBUG:sarge:Capture-6: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-5: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+DEBUG:sarge:started: CommandNode(command=('docker', 'images') redirects={}), None, False
+DEBUG:sarge:Command('docker images') created
+DEBUG:sarge:About to call Popen: ('docker', 'images'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('docker images'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10fead8f0>, '_input': None, '_communication_started': False, 'args': ('docker', 'images'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72900, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-7 as reader for Capture-7
+DEBUG:sarge:Capture-7: reader thread about to read line
+DEBUG:sarge:Capture-7: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-7: reader thread now started
+DEBUG:sarge:Created thread Thread-8 as reader for Capture-8
+DEBUG:sarge:Capture-8: reader thread about to read line
+DEBUG:sarge:Capture-8: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-8: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 85: b'REPOSITORY          TAG       '
+DEBUG:sarge:queued chunk of length 88: b'onda                latest    '
+DEBUG:sarge:queued chunk of length 87: b'cowimage            latest    '
+DEBUG:sarge:queued chunk of length 87: b'cow                 latest    '
+DEBUG:sarge:queued chunk of length 87: b'myimag              latest    '
+DEBUG:sarge:queued chunk of length 87: b'<none>              <none>    '
+DEBUG:sarge:queued chunk of length 87: b'joommf/oommf        latest    '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.10     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.04     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              latest    '
+DEBUG:sarge:Capture-7: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('docker images') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+DEBUG:sarge:Capture-8: finished reading stream <_io.BufferedReader name=6>
+DEBUG:root:Call starts
+DEBUG:sarge:started: CommandNode(command=('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', 'example-macrospin/example-macrospin.mif', '-exitondone', '1') redirects={}), None, False
+DEBUG:sarge:Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg example-macrospin/example-macrospin.mif -exitondone 1') created
+DEBUG:sarge:About to call Popen: ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', 'example-macrospin/example-macrospin.mif', '-exitondone', '1'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg example-macrospin/example-macrospin.mif -exitondone 1'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10fead940>, '_input': None, '_communication_started': False, 'args': ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', 'example-macrospin/example-macrospin.mif', '-exitondone', '1'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72901, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-9 as reader for Capture-9
+DEBUG:sarge:Capture-9: reader thread about to read line
+DEBUG:sarge:Capture-9: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-9: reader thread now started
+DEBUG:sarge:Created thread Thread-10 as reader for Capture-10
+DEBUG:sarge:Capture-10: reader thread about to read line
+DEBUG:sarge:Capture-10: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-10: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 101: b'Start: "/Users/fangohr/git/joo'
+DEBUG:sarge:queued chunk of length 34: b'Options: -exitondone 1 -thread'
+DEBUG:sarge:queued chunk of length 22: b'Boxsi version 1.2.1.0\n'
+DEBUG:sarge:queued chunk of length 25: b'Running on: escape.local\n'
+DEBUG:sarge:queued chunk of length 26: b'OS/machine: Darwin/x86_64\n'
+DEBUG:sarge:queued chunk of length 25: b'User: fangohr\tPID: 72905\n'
+DEBUG:sarge:queued chunk of length 21: b'Number of threads: 4\n'
+DEBUG:sarge:queued chunk of length 35: b'Mesh geometry: 1 x 1 x 1 = 1 c'
+DEBUG:sarge:queued chunk of length 113: b'Checkpoint file: /Users/fangoh'
+DEBUG:sarge:queued chunk of length 15: b'Boxsi run end.\n'
+DEBUG:sarge:Capture-10: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-9: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg example-macrospin/example-macrospin.mif -exitondone 1') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+DEBUG:root:oommf::call execution took [5.9s] seconds
+DEBUG:root:oommf::call return value is 0
+DEBUG:root:oommf::call return val is <sarge.Pipeline object at 0x10fed46d8>
+/Users/fangohr/git/aeon/aeon/timer.py:35: UserWarning: You are nesting measurements in _where_to_run::OOMMF.
+  warnings.warn("You are nesting measurements in {}::{}.".format(name, group))
+DEBUG:sarge:started: CommandNode(command=('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'killoommf', 'all') redirects={}), None, False
+DEBUG:sarge:Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl killoommf all') created
+DEBUG:sarge:About to call Popen: ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'killoommf', 'all'), {'stdout': None, 'stderr': None, 'stdin': None}
+DEBUG:sarge:Popen: Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl killoommf all'), {'stdout': None, 'stderr': None, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10ecdf710>, '_input': None, '_communication_started': False, 'args': ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'killoommf', 'all'), 'stdin': None, 'stdout': None, 'stderr': None, 'pid': 72931, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:about to wait for process
+ <1> mmarchive killed
+ <2> mmarchive killed
+ <3> mmarchive killed
+DEBUG:sarge:returning Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl killoommf all') (Popen(returncode=0 stdin=None stdout=None stderr=None))
+DEBUG:sarge:pipeline closing
+DEBUG:sarge:started: CommandNode(command=('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1') redirects={}), None, False
+DEBUG:sarge:Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') created
+DEBUG:sarge:About to call Popen: ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10fead6e8>, '_input': None, '_communication_started': False, 'args': ('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72939, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-11 as reader for Capture-11
+DEBUG:sarge:Capture-11: reader thread about to read line
+DEBUG:sarge:Capture-11: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-11: reader thread now started
+DEBUG:sarge:Created thread Thread-12 as reader for Capture-12
+DEBUG:sarge:Capture-12: reader thread about to read line
+DEBUG:sarge:Capture-12: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-12: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 33: b'<72939> oommf.tcl 1.2.1.0  inf'
+DEBUG:sarge:queued chunk of length 18: b'oommf.tcl 1.2.1.0\n'
+DEBUG:sarge:Capture-12: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-11: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('tclsh /Users/fangohr/git/oommf/oommf/oommf.tcl boxsi +fg +version -exitondone 1') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+DEBUG:sarge:started: CommandNode(command=('docker', 'images') redirects={}), None, False
+DEBUG:sarge:Command('docker images') created
+DEBUG:sarge:About to call Popen: ('docker', 'images'), {'stdout': -1, 'stderr': -1, 'stdin': None}
+DEBUG:sarge:Popen: Command('docker images'), {'stdout': -1, 'stderr': -1, 'stdin': None} -> {'_waitpid_lock': <unlocked _thread.lock object at 0x10feadc10>, '_input': None, '_communication_started': False, 'args': ('docker', 'images'), 'stdin': None, 'stdout': <_io.BufferedReader name=4>, 'stderr': <_io.BufferedReader name=6>, 'pid': 72940, 'returncode': None, 'universal_newlines': False, 'encoding': None, 'errors': None, '_closed_child_pipe_fds': True, '_child_created': True}
+DEBUG:sarge:Created thread Thread-13 as reader for Capture-13
+DEBUG:sarge:Capture-13: reader thread about to read line
+DEBUG:sarge:Capture-13: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-13: reader thread now started
+DEBUG:sarge:Created thread Thread-14 as reader for Capture-14
+DEBUG:sarge:Capture-14: reader thread about to read line
+DEBUG:sarge:Capture-14: reader thread kicked off, waiting start
+DEBUG:sarge:Capture-14: reader thread now started
+DEBUG:sarge:about to wait for process
+DEBUG:sarge:queued chunk of length 85: b'REPOSITORY          TAG       '
+DEBUG:sarge:queued chunk of length 88: b'onda                latest    '
+DEBUG:sarge:queued chunk of length 87: b'cowimage            latest    '
+DEBUG:sarge:queued chunk of length 87: b'cow                 latest    '
+DEBUG:sarge:queued chunk of length 87: b'myimag              latest    '
+DEBUG:sarge:queued chunk of length 87: b'<none>              <none>    '
+DEBUG:sarge:queued chunk of length 87: b'joommf/oommf        latest    '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.10     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              16.04     '
+DEBUG:sarge:queued chunk of length 87: b'ubuntu              latest    '
+DEBUG:sarge:Capture-14: finished reading stream <_io.BufferedReader name=6>
+DEBUG:sarge:Capture-13: finished reading stream <_io.BufferedReader name=4>
+DEBUG:sarge:returning Command('docker images') (Popen(returncode=0 stdin=None stdout=<_io.BufferedReader name=4> stderr=<_io.BufferedReader name=6>))
+DEBUG:sarge:pipeline closing
+_run_cmd: took 0.1s to call '('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1')'
+_run_cmd: took 0.0s to call '('docker', 'images')'
+_run_cmd: took 0.1s to call '('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1')'
+_run_cmd: took 0.0s to call '('docker', 'images')'
+2017/4/23 15:42: Calling OOMMF (example-macrospin/example-macrospin.mif) ... _run_cmd: took 5.9s to call '('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', 'example-macrospin/example-macrospin.mif', '-exitondone', '1')'
+[5.9s]
+Duration of calling OOMMF through oommfc: 6.779s
+_run_cmd: took 0.1s to call '('tclsh', '/Users/fangohr/git/oommf/oommf/oommf.tcl', 'boxsi', '+fg', '+version', '-exitondone', '1')'
+_run_cmd: took 0.0s to call '('docker', 'images')'
+oommfc.oommf.status(): {'host': True, 'docker': True}
