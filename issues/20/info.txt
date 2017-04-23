@@ -1,0 +1,3 @@
+The slow run was measured in Eurostar while travelling, the fast run
+after arriving in Brussels. No other change. No reboot, restart, ...
+Somebody should look at the data -maybe we can learn something from it.
